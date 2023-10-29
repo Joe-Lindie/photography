@@ -1,5 +1,5 @@
-import Nav from '@/components/Nav';
-import Grid from '@/components/Grid';
+import Nav from '@/components/coreUl/Nav';
+import Grid from '@/components/coreUl/Grid';
 import AboutPageData from '@/data/aboutPageData';
 
 const About = () => {

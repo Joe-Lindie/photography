@@ -1,5 +1,5 @@
 'use client';
-import Nav from '@/components/Nav';
+import Nav from '@/components/coreUl/Nav';
 import HomepageCarousel from '@/components/HomepageCarousel';
 
 const Home = () => {
