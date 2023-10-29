@@ -1,5 +1,6 @@
 import Nav from '@/components/Nav';
 import Grid from '@/components/Grid';
+import AboutPageData from '@/data/aboutPageData';
 
 const About = () => {
   return (
@@ -11,7 +12,9 @@ const About = () => {
       </main>
 
       <Grid>
-        <div className="col-start-1 col-end-13"></div>
+        <div className="col-start-1 col-end-13">
+          <AboutPageData />
+        </div>
       </Grid>
     </>
   );
