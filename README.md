@@ -1,8 +1,8 @@
-# Photography Blog (Work in Progress)
+## Photography Blog (Work in Progress)
 
 Welcome to the Photography Blog, a platform for sharing images from around the world.
 
-# Tech Stack
+## Tech Stack
 
 This project is built using Next.js 14, Tailwind CSS for styling, and Amazon S3 for hosting high-quality images.
 
