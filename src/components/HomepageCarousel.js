@@ -1,5 +1,8 @@
 import React, { useState } from 'react';
 import imageData from '@/data/imageData';
+import Image from 'next/image';
+import rightChevron from '../../public/right-chevron.png';
+import leftChevron from '../../public/left-chevron.png';
 
 const HomepageCarousel = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -25,12 +28,12 @@ const HomepageCarousel = () => {
         ></img>
       ))}
 
-      <div className="flex">
-        <button className="pr-2 hover:underline" onClick={handlePrevious}>
-          Previous
+      <div className="flex justify-center items-center pt-4">
+        <button className="w-8 h-8 pr-1" onClick={handleNext}>
+          <Image src={leftChevron} alt="left arrow" />
         </button>
-        <button className="pl-2 hover:underline" onClick={handleNext}>
-          Next
+        <button className="w-8 h-8 pl-1" onClick={handlePrevious}>
+          <Image src={rightChevron} alt="right arrow" />
         </button>
       </div>
     </>

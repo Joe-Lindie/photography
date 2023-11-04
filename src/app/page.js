@@ -6,10 +6,7 @@ const Home = () => {
   return (
     <div className="bg-lightBrown h-screen">
       <TopNav />
-   
       <HomepageCarousel />
-
-  
     </div>
   );
 };
