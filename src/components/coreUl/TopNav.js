@@ -15,16 +15,16 @@ const TopNav = () => {
         className="flex justify-end cursor-pointer md:hidden relative"
         onClick={handleToggle}
       >
-        <div className='flex flex-col absolute'>
-        <span>Mobile Menu Toggle</span>
-        <ul className={`text-right ${isOpen ? 'hidden' : 'block'}`}>
-          <li className="hover:underline">
-            <Link href="/">Home</Link>
-          </li>
-          <li className="hover:underline">
-            <Link href="/about">About</Link>
-          </li>
-        </ul>
+        <div className="flex flex-col absolute">
+          <span>Mobile Menu Toggle</span>
+          <ul className={`text-right ${isOpen ? 'hidden' : 'block'}`}>
+            <li className="hover:underline">
+              <Link href="/">Home</Link>
+            </li>
+            <li className="hover:underline">
+              <Link href="/about">About</Link>
+            </li>
+          </ul>
         </div>
       </div>
 
