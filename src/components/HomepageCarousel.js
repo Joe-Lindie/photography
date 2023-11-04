@@ -13,17 +13,18 @@ const HomepageCarousel = () => {
   };
 
   return (
-    <div className="flex flex-col items-center">
+    <>
       {imageData.map((image, index) => (
-        <div
-          key={image.url}
-          className={`w-2/4 h-2/4 ${
+        <img
+          className={`w-full h-3/5 object-cover object-center ${
             index === currentIndex ? 'visible' : 'hidden'
           }`}
-        >
-          <img src={image.url} alt={image.alt}></img>
-        </div>
+          key={image.url}
+          src={image.url}
+          alt={image.alt}
+        ></img>
       ))}
+
       <div className="flex">
         <button className="pr-2 hover:underline" onClick={handlePrevious}>
           Previous
@@ -32,7 +33,7 @@ const HomepageCarousel = () => {
           Next
         </button>
       </div>
-    </div>
+    </>
   );
 };
 

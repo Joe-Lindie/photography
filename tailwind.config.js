@@ -9,8 +9,10 @@ module.exports = {
     extend: {
       colors: {
         brown: '#c8b3a2', // HEX brown
-        lightBrown: '#e1d3c8', // HEX light brown
+        lightBrown: '#ddd5d0', // HEX light brown
         darkCream: '#dddad1', // HEX dark cream
+  
+  
       },
       screens: {
         xs: '360px', // Extra small screens

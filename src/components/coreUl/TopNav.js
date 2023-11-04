@@ -11,7 +11,7 @@ const TopNav = () => {
   };
 
   return (
-    <div className="bg-brown py-6">
+    <div className="bg-lightBrown py-6">
       {/* Mobile Menu */}
       <div
         className="flex justify-end cursor-pointer md:hidden relative"
@@ -21,7 +21,11 @@ const TopNav = () => {
           <Image src={hamburgerMenu} alt="Hamburger Menu" />
         </div>
 
-        <div className={`flex flex-col absolute mt-10 bg-brown ${!isOpen ? 'h-screen p-6' : ""}`}>
+        <div
+          className={`flex flex-col absolute mt-10 bg-brown ${
+            !isOpen ? 'h-screen p-6' : ''
+          }`}
+        >
           <ul className={`text-right ${isOpen ? 'hidden' : 'block'}`}>
             <li className="hover:underline">
               <Link href="/">Home</Link>
