@@ -19,6 +19,32 @@ module.exports = {
         lg: '1024px', // Large screens
         xl: '1280px', // Extra-large screens
       },
+      animation: {
+        'slide-in-right': 'slide-in-right 0.5s ease-out',
+        'slide-in-left': 'slide-in-left 0.5s ease-out',
+      },
+      keyframes: {
+        'slide-in-right': {
+          '0%': {
+            transform: 'translateX(100%)',
+            opacity: '0',
+          },
+          '100%': {
+            transform: 'translateX(0)',
+            opacity: '1',
+          },
+        },
+        'slide-in-left': {
+          '0%': {
+            transform: 'translateX(-100%)',
+            opacity: '0',
+          },
+          '100%': {
+            transform: 'translateX(0)',
+            opacity: '1',
+          },
+        },
+      },
     },
   },
   plugins: [],
