@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import imageData from '@/data/imageData';
+import { backgroundImages } from '@/data/imageData';
 import Image from 'next/image';
 import rightChevron from '../../public/right-chevron.png';
 import leftChevron from '../../public/left-chevron.png';
@@ -8,16 +8,18 @@ const HomepageCarousel = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
 
   const handleNext = () => {
-    setCurrentIndex((currentIndex + 1) % imageData.length);
+    setCurrentIndex((currentIndex + 1) % backgroundImages.length);
   };
 
   const handlePrevious = () => {
-    setCurrentIndex((currentIndex - 1 + imageData.length) % imageData.length);
+    setCurrentIndex(
+      (currentIndex - 1 + backgroundImages.length) % backgroundImages.length,
+    );
   };
 
   return (
     <>
-      {imageData.map((image, index) => (
+      {backgroundImages.map((image, index) => (
         <img
           className={`w-full h-3/5 object-cover object-center ${
             index === currentIndex ? 'visible' : 'hidden'
