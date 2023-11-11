@@ -11,6 +11,7 @@ module.exports = {
         brown: '#c8b3a2', // HEX brown
         lightBrown: '#ddd5d0', // HEX light brown
         darkCream: '#dddad1', // HEX dark cream
+        blackrgba: 'rgba(0, 0, 0, 0.7)',
       },
       screens: {
         xs: '360px', // Extra small screens

@@ -6,9 +6,13 @@ import { imagesData } from '@/data/imageData';
 
 const Home = () => {
   return (
-    <div className="h-screen">
+    <div className="h-screen relative">
       <TopNav />
       <HomepageCarousel />
+      <div className="absolute bottom-72 left-4 p-8 rounded-sm text-center bg-blackrgba">
+        <h1 className="text-white pb-1">Photography Blog</h1>
+        <p className="text-white">The world through my lens</p>
+      </div>
 
       <Grid>
         <div className="col-start-1 col-end-13 pt-8 flex justify-center">
