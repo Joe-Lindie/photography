@@ -21,7 +21,7 @@ const HomepageCarousel = () => {
     <>
       {backgroundImages.map((image, index) => (
         <Image
-          className={`w-full h-3/5 object-cover object-center ${
+          className={`w-full h-full object-cover object-center ${
             index === currentIndex ? 'visible' : 'hidden'
           }`}
           key={image.url}
