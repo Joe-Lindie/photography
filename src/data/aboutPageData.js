@@ -1,4 +1,7 @@
-const AboutPage = () => {
+import Links from '@/components/Links';
+import globals from './globals';
+
+const aboutPageData = () => {
   return (
     <>
       <p className="pb-4">
@@ -13,8 +16,9 @@ const AboutPage = () => {
       </p>
 
       <p className="pb-4">
-        Keen to learn more about my coding journey? Check out my GitHub profile
-        for a closer look at my projects.
+        Keen to learn more about my coding journey? Check out my{' '}
+        <Links linkText="GitHub profile" href={globals().externalLinks.Linkedin} /> for a
+        closer look at my projects.
       </p>
 
       <p className="pb-4">
@@ -24,11 +28,11 @@ const AboutPage = () => {
       </p>
 
       <p>
-        As I continue to code and capture moments, I invite you to stay
-        connected.
+        As I continue to code and capture moments, I invite you to stay{' '}
+       <Links linkText="connected." href={globals().contacts.Main} />
       </p>
     </>
   );
 };
 
-export default AboutPage;
+export default aboutPageData;

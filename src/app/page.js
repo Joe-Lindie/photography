@@ -8,7 +8,7 @@ const Home = () => {
   return (
     <>
       <TopNav />
-      <div className="relative h-3/5">
+      <div className="relative h-3/5 pt-1">
         <HomepageCarousel />
         <div className="absolute bottom-2.5 left-0 md:left-4 p-2 md:p-6 rounded-sm text-center text-white bg-blackrgba">
           <h1 className="pb-1">Photography Blog</h1>

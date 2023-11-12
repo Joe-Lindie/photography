@@ -14,7 +14,7 @@ const TopNav = () => {
   return (
     <>
       <div
-        className="flex justify-between items-center relative bg-lightBrown py-6"
+        className="flex justify-between items-center relative bg-lightBrown shadow-md py-6"
         onClick={handleToggle}
       >
         <div className="w-8 h-8 ml-6">
@@ -23,7 +23,7 @@ const TopNav = () => {
           </Link>
         </div>
 
-        <div className="w-6 h-6 mr-6 md:hidden">
+        <div className="w-6 h-6 mr-6 md:hidden cursor-pointer">
           <Image src={hamburgerMenu} alt="mobile menu button" />
         </div>
 
