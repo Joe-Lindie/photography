@@ -23,7 +23,10 @@ const AboutPage = () => {
         on exciting projects.
       </p>
 
-      <p>As I continue to code and capture moments, I invite you to stay connected.</p>
+      <p>
+        As I continue to code and capture moments, I invite you to stay
+        connected.
+      </p>
     </>
   );
 };
