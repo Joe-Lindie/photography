@@ -1,6 +1,6 @@
 ## Photography Blog (Work in Progress)
 
-Welcome to the Photography Blog, a platform for sharing images from around the world.
+Welcome to my Photography Blog, a platform for sharing images.
 
 ## Tech Stack
 
