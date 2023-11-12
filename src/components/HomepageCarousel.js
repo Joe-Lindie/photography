@@ -20,14 +20,17 @@ const HomepageCarousel = () => {
   return (
     <>
       {backgroundImages.map((image, index) => (
-        <img
+        <Image
           className={`w-full h-3/5 object-cover object-center ${
             index === currentIndex ? 'visible' : 'hidden'
           }`}
           key={image.url}
           src={image.url}
           alt={image.alt}
-        ></img>
+          width={1000}
+          height={1000}
+          priority={true}
+        ></Image>
       ))}
 
       <div className="flex justify-center items-center pt-4">

@@ -1,5 +1,6 @@
 'use client';
 import TopNav from '@/components/coreUl/TopNav';
+import Image from 'next/image';
 import HomepageCarousel from '@/components/HomepageCarousel';
 import Grid from '@/components/coreUl/Grid';
 import { imagesData } from '@/data/imageData';
@@ -18,12 +19,14 @@ const Home = () => {
         <div className="col-start-1 col-end-13 pt-8 flex justify-center">
           <div className="flex flex-wrap">
             {imagesData.map((image) => (
-              <img
+              <Image
                 key={image.url}
                 src={image.url}
                 alt={image.alt}
+                width={500}
+                height={500}
                 className="w-32 h-32 m-2 rounded-sm object-cover"
-              ></img>
+              ></Image>
             ))}
           </div>
         </div>
