@@ -42,7 +42,7 @@ const TopNav = () => {
 
       {/* Mobile Menu */}
       <nav
-        className={`absolute right-0 bg-brown ${
+        className={`z-10 absolute right-0 bg-brown ${
           isOpen ? 'h-screen p-6 md:hidden animate-slide-in-right' : ''
         }`}
       >
