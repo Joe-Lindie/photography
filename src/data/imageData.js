@@ -28,7 +28,7 @@ const imagesData = [
 const backgroundImages = [
   {
     alt: 'imageOne',
-    url: 'https://bindusphotographybucket.s3.eu-north-1.amazonaws.com/homepage/IMG_4619.JPG',
+    url: 'https://bindusphotographybucket.s3.eu-north-1.amazonaws.com/homepage/IMG_6898.JPG',
   },
   {
     alt: 'imageTwo',
