@@ -1,38 +1,38 @@
 const imagesData = [
   {
-    alt: 'imageOne',
+    alt: 'Woljeong Bridge, Gyeongju, South Korea',
     url: 'https://bindusphotographybucket.s3.eu-north-1.amazonaws.com/homepage/IMG_5037.jpg',
   },
   {
-    alt: 'imageTwo',
+    alt: 'Daegu, South Korea',
     url: 'https://bindusphotographybucket.s3.eu-north-1.amazonaws.com/homepage/IMG_5427.jpg',
   },
   {
-    alt: 'imageThree',
+    alt: 'Mt Fuji Japan',
     url: 'https://bindusphotographybucket.s3.eu-north-1.amazonaws.com/homepage/IMG_5814.jpg',
   },
   {
-    alt: 'imageFour',
-    url: 'https://bindusphotographybucket.s3.eu-north-1.amazonaws.com/homepage/IMG_2258.JPG',
+    alt: 'Road lined with cherry blossom trees, South Korea',
+    url: 'https://bindusphotographybucket.s3.eu-north-1.amazonaws.com/homepage/IMG_2258.jpg',
   },
   {
-    alt: 'imageFive',
-    url: 'https://bindusphotographybucket.s3.eu-north-1.amazonaws.com/homepage/IMG_2510.JPG',
+    alt: 'Pond in South Korea',
+    url: 'https://bindusphotographybucket.s3.eu-north-1.amazonaws.com/homepage/IMG_2510.jpg',
   },
   {
-    alt: 'imageSix',
-    url: 'https://bindusphotographybucket.s3.eu-north-1.amazonaws.com/homepage/IMG_6961.JPG',
+    alt: 'Isle of Skye ',
+    url: 'https://bindusphotographybucket.s3.eu-north-1.amazonaws.com/homepage/IMG_6961.jpg',
   },
 ];
 
 const backgroundImages = [
   {
-    alt: 'imageOne',
-    url: 'https://bindusphotographybucket.s3.eu-north-1.amazonaws.com/homepage/IMG_6898.JPG',
+    alt: 'Little white house Scottish Highlands, Glencoe',
+    url: 'https://bindusphotographybucket.s3.eu-north-1.amazonaws.com/homepage/IMG_6898.jpg',
   },
   {
-    alt: 'imageTwo',
-    url: 'https://bindusphotographybucket.s3.eu-north-1.amazonaws.com/homepage/IMG_4629.JPG',
+    alt: 'Jeju island, South Korea',
+    url: 'https://bindusphotographybucket.s3.eu-north-1.amazonaws.com/homepage/IMG_4629.jpg',
   },
 ];
 
