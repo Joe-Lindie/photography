@@ -1,7 +1,6 @@
 import Link from 'next/link';
 
 const Links = ({ linkText, href, isInternal }) => {
-  console.log(isInternal);
   return (
     <Link
       href={href}
