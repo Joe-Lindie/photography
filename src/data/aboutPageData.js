@@ -17,11 +17,8 @@ const aboutPageData = () => {
 
       <p className="pb-4">
         Keen to learn more about my coding journey? Check out my{' '}
-        <Links
-          linkText="GitHub profile"
-          href={globals().externalLinks.Github}
-        />{' '}
-        for a closer look at my projects.
+        <Links linkText="GitHub profile" href={globals().externalLinks.Github} /> for a
+        closer look at my projects.
       </p>
 
       <p className="pb-4">
@@ -32,7 +29,7 @@ const aboutPageData = () => {
 
       <p>
         As I continue to code and capture moments, I invite you to stay{' '}
-        <Links linkText="connected." href={globals().contacts.Main} />
+       <Links linkText="connected." href={globals().contacts.Main} />
       </p>
     </>
   );
