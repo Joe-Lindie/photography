@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import Image from 'next/image';
-import hamburgerMenu from '../../../public/hamburger-menu.svg';
+import hamburger from '../../../public/hamburger.png';
 import lens from '../../../public/lens.png';
 import githubIcon from '../../../public/github.png';
 import instagramIcon from '../../../public/instagram.png';
@@ -29,7 +29,7 @@ const TopNav = () => {
         </div>
 
         <div className="w-6 h-6 mr-6 md:hidden cursor-pointer">
-          <Image src={hamburgerMenu} alt="mobile menu button" />
+          <Image src={hamburger} alt="mobile menu button" />
         </div>
 
         {/* Desktop Menu */}
