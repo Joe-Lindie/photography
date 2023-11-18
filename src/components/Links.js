@@ -1,12 +1,13 @@
 import Link from 'next/link';
 
-const Links = ({ linkText, href }) => {
+const Links = ({ linkText, href, isInternal }) => {
+  console.log(isInternal);
   return (
     <Link
       href={href}
       rel="noopener noreferrer"
-      target="_blank"
-      className="font-bold hover:underline"
+      {...(isInternal ? null : { target: '_blank' })}
+      className="hover:underline"
     >
       {linkText}
     </Link>

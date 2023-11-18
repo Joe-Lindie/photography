@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-import Link from 'next/link';
 import Image from 'next/image';
 import hamburgerMenu from '../../../public/hamburger-menu.svg';
 import lens from '../../../public/lens.png';
@@ -22,9 +21,11 @@ const TopNav = () => {
         onClick={handleToggle}
       >
         <div className="w-8 h-8 ml-6">
-          <Link href="/">
-            <Image src={lens} alt="lens logo" />
-          </Link>
+          <Links
+            linkText={<Image src={lens} alt="lens logo" />}
+            href="/"
+            isInternal
+          />
         </div>
 
         <div className="w-6 h-6 mr-6 md:hidden cursor-pointer">
@@ -34,11 +35,11 @@ const TopNav = () => {
         {/* Desktop Menu */}
         <nav className="hidden md:block pr-10">
           <ul className="flex justify-end">
-            <li className="pr-3 hover:underline">
-              <Link href="/">Home</Link>
+            <li className="pr-3">
+              <Links linkText="Home" href="/" isInternal />
             </li>
-            <li className="pr-3 hover:underline">
-              <Link href="/about">About</Link>
+            <li className="pr-3">
+              <Links linkText="About" href="/about" isInternal />
             </li>
 
             <div className=" w-7 h-7 pl-2">
@@ -69,11 +70,11 @@ const TopNav = () => {
         }`}
       >
         <ul className={`text-left ${isOpen ? 'block' : 'hidden h-screen p-6'}`}>
-          <li className="hover:underline">
-            <Link href="/">Home</Link>
+          <li>
+            <Links linkText="Home" href="/" isInternal />
           </li>
-          <li className="hover:underline">
-            <Link href="/about">About</Link>
+          <li>
+            <Links linkText="About" href="/about" isInternal />
           </li>
         </ul>
       </nav>
