@@ -5,7 +5,7 @@ Welcome to my Photography Blog, a platform for sharing images.
 This project is built using Next.js 14, Tailwind CSS for styling, and Amazon S3 for hosting high-quality images.
 
 ## Deployed Environment
-See the deployed environment [here](https://photography-mjrfr7cr2-joe-lindie.vercel.app/)
+See the deployed environment [here](https://photography-steel.vercel.app/)
 
 ## Getting Started
 Follow these steps to get the Photography Blog up and running on your local machine.
