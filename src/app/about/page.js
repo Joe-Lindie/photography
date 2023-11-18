@@ -13,9 +13,7 @@ const About = () => {
       </main>
 
       <Grid>
-        <div className="col-start-2 col-end-12">
-          {aboutPageData()}
-        </div>
+        <div className="col-start-2 col-end-12">{aboutPageData()}</div>
       </Grid>
     </>
   );

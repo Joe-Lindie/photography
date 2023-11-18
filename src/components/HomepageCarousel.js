@@ -6,7 +6,7 @@ import leftChevron from '../../public/left-chevron.png';
 
 const HomepageCarousel = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
-  
+
   const handleNext = () => {
     setCurrentIndex((currentIndex + 1) % backgroundImages.length);
   };
@@ -22,7 +22,9 @@ const HomepageCarousel = () => {
       {backgroundImages.map((image, index) => (
         <Image
           className={`w-full h-full object-cover object-center absolute ${
-            index === currentIndex ? 'visible animate-slide-in-left' : 'invisible'
+            index === currentIndex
+              ? 'visible animate-slide-in-left'
+              : 'invisible'
           }`}
           key={image.url}
           src={image.url}

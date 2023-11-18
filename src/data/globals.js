@@ -1,10 +1,11 @@
 const globals = () => {
   return {
     externalLinks: {
-        Linkedin: 'https://www.linkedin.com/',
+      Linkedin: 'https://www.linkedin.com/',
+      Github: 'https://github.com/Joe-Lindie',
     },
     contacts: {
-        Main: 'mailto:Josephlindie@hotmail.co.uk',
+      Main: 'mailto:Josephlindie@hotmail.co.uk',
     },
   };
 };
