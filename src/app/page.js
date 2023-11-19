@@ -1,8 +1,7 @@
 'use client';
 import TopNav from '@/components/coreUl/TopNav';
-import Image from 'next/image';
 import HomepageCarousel from '@/components/HomepageCarousel';
-import { imagesData } from '@/data/imageData';
+import HomepageModal from '@/components/HopepageModal';
 
 const Home = () => {
   return (
@@ -17,18 +16,7 @@ const Home = () => {
         </div>
       </div>
 
-      <div className="flex justify-center flex-wrap pt-14">
-        {imagesData.map((image) => (
-          <Image
-            key={image.url}
-            src={image.url}
-            alt={image.alt}
-            width={500}
-            height={500}
-            className="w-32 h-32 m-2 rounded-sm object-cover"
-          ></Image>
-        ))}
-      </div>
+      <HomepageModal />
     </>
   );
 };
