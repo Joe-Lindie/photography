@@ -1,7 +1,7 @@
 'use client';
 import TopNav from '@/components/coreUl/TopNav';
 import HomepageCarousel from '@/components/HomepageCarousel';
-import HomepageModal from '@/components/HopepageModal';
+import HomepageModal from '@/components/HomepageModal';
 
 const Home = () => {
   return (
