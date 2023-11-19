@@ -36,10 +36,16 @@ const HomepageCarousel = () => {
       ))}
 
       <div className="flex justify-between inset-x-0 absolute">
-        <button className="w-8 h-8 mt-2.5 ml-2.5" onClick={handleNext}>
+        <button
+          className="w-8 h-8 mt-2.5 ml-2.5 p-2 rounded-full bg-blackrgba"
+          onClick={handleNext}
+        >
           <Image src={leftChevron} alt="left arrow" />
         </button>
-        <button className="w-8 h-8 mt-2.5 mr-2.5" onClick={handlePrevious}>
+        <button
+          className="w-8 h-8 mt-2.5 mr-2.5 p-2 rounded-full bg-blackrgba"
+          onClick={handlePrevious}
+        >
           <Image src={rightChevron} alt="right arrow" />
         </button>
       </div>
