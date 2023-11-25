@@ -23,8 +23,8 @@ const HomepageCarousel = () => {
         <Image
           className={`w-full h-full object-cover object-center absolute ${
             index === currentIndex
-              ? 'visible animate-slide-in-left'
-              : 'invisible'
+              ? 'opacity-100 transition-opacity ease-in delay-150 duration-500'
+              : 'opacity-0'
           }`}
           key={image.url}
           src={image.url}

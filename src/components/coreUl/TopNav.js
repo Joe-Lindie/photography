@@ -17,7 +17,7 @@ const TopNav = () => {
   return (
     <>
       <div
-        className="flex justify-between items-center relative bg-lightBrown shadow-md py-6"
+        className="z-20 flex justify-between items-center relative bg-lightBrown shadow-md py-6"
         onClick={handleToggle}
       >
         <div className="w-8 h-8 ml-6">
