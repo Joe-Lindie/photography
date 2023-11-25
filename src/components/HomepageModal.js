@@ -35,7 +35,7 @@ const HomepageModal = () => {
       </div>
 
       {selectedImage && (
-        <div className="w-full h-full flex items-center justify-center top-0 left-0 fixed bg-black bg-opacity-70 backdrop-blur-md">
+        <div className="z-30 w-full h-full flex items-center justify-center top-0 left-0 fixed bg-black bg-opacity-70 backdrop-blur-md">
           <p
             onClick={() => closeImage()}
             className="text-white text-right cursor-pointer absolute top-0 right-0 pr-4 pt-4"
