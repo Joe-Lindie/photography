@@ -27,12 +27,13 @@ const imagesData = [
 
 const backgroundImages = [
   {
-    alt: 'Little white house Scottish Highlands, Glencoe',
-    url: 'https://bindusphotographybucket.s3.eu-north-1.amazonaws.com/homepage/IMG_6898.jpg',
+    alt: 'some text',
   },
   {
     alt: 'Jeju island, South Korea',
-    url: 'https://bindusphotographybucket.s3.eu-north-1.amazonaws.com/homepage/IMG_4629.jpg',
+  },
+  {
+    alt: 'Little white house Scottish Highlands, Glencoe',
   },
 ];
 

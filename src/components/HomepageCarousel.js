@@ -1,34 +1,36 @@
+'use client';
+
 import React, { useState } from 'react';
-import { backgroundImages } from '@/data/imageData';
+// import { backgroundImages } from '@/data/imageData';
 import Image from 'next/image';
 import rightChevron from '../../public/right-chevron.png';
 import leftChevron from '../../public/left-chevron.png';
 
-const HomepageCarousel = () => {
+const HomepageCarousel = ({ data }) => {
   const [currentIndex, setCurrentIndex] = useState(0);
 
+  const newData = data.props.data.slice(1);
+
   const handleNext = () => {
-    setCurrentIndex((currentIndex + 1) % backgroundImages.length);
+    setCurrentIndex((currentIndex + 1) % newData.length);
   };
 
   const handlePrevious = () => {
-    setCurrentIndex(
-      (currentIndex - 1 + backgroundImages.length) % backgroundImages.length,
-    );
+    setCurrentIndex((currentIndex - 1 + newData.length) % newData.length);
   };
 
   return (
     <>
-      {backgroundImages.map((image, index) => (
+      {newData.map((url, index) => (
         <Image
           className={`w-full h-full object-cover object-center absolute ${
             index === currentIndex
               ? 'opacity-100 transition-opacity ease-in delay-150 duration-500'
               : 'opacity-0'
           }`}
-          key={image.url}
-          src={image.url}
-          alt={image.alt}
+          key={index}
+          src={url.url}
+          alt={url.alt}
           width={1000}
           height={1000}
           priority={true}
