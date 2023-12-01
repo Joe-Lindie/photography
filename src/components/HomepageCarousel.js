@@ -7,8 +7,8 @@ import leftChevron from '../../public/left-chevron.png';
 
 const HomepageCarousel = ({ imageData }) => {
   const [currentIndex, setCurrentIndex] = useState(0);
- 
-  const modifiedData = imageData.data.map((item) => ({
+
+  const modifiedData = imageData.map((item) => ({
     url: item.url,
     alt: '',
     description: '',

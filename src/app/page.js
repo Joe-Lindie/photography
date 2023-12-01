@@ -5,9 +5,7 @@ import getObjects from '@/utils/s3';
 
 const getData = async () => {
   const data = await getObjects();
-  return {
-    data,
-  };
+  return data;
 };
 
 const imageData = await getData();
