@@ -5,10 +5,10 @@ import Image from 'next/image';
 import rightChevron from '../../public/right-chevron.png';
 import leftChevron from '../../public/left-chevron.png';
 
-const HomepageCarousel = ({ data }) => {
+const HomepageCarousel = ({ imageData }) => {
   const [currentIndex, setCurrentIndex] = useState(0);
-
-  const modifiedData = data.data.map((item) => ({
+ 
+  const modifiedData = imageData.data.map((item) => ({
     url: item.url,
     alt: '',
     description: '',
