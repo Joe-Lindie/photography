@@ -19,10 +19,7 @@ const TopNav = () => {
 
   return (
     <>
-      <div
-        className="z-20 flex justify-between relative bg-lightBrown shadow-md py-6"
-        onClick={handleToggle}
-      >
+      <div className="z-20 flex justify-between relative bg-light_brown shadow-md py-6">
         <div className="w-8 h-8 ml-6">
           <StyledLinks
             linkText={<Image src={lens} alt={globals.appName} />}
@@ -67,7 +64,10 @@ const TopNav = () => {
           </div>
 
           {/* Mobile Menu Button */}
-          <div className="w-6 h-6 mr-6 md:hidden cursor-pointer">
+          <div
+            onClick={handleToggle}
+            className="w-6 h-6 mr-6 md:hidden cursor-pointer"
+          >
             <Image src={hamburger} alt="" />
           </div>
         </div>

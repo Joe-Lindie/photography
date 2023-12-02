@@ -8,17 +8,17 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        brown: '#c8b3a2', // HEX brown
-        lightBrown: '#ddd5d0', // HEX light brown
-        darkCream: '#dddad1', // HEX dark cream
-        blackrgba: 'rgba(0, 0, 0, 0.7)',
+        brown: '#c8b3a2', //brown
+        light_brown: '#ddd5d0', //light_brown
+        dark_cream: '#dddad1', //dark_cream
+        black_rgba: 'rgba(0, 0, 0, 0.7)', //opaque_black 
       },
       screens: {
-        xs: '360px', // Extra small screens
-        sm: '640px', // Small screens
-        md: '768px', // Medium screens
-        lg: '1024px', // Large screens
-        xl: '1280px', // Extra-large screens
+        xs: '360px', //Extra small screens
+        sm: '640px', //Small screens
+        md: '768px', //Medium screens
+        lg: '1024px', //Large screens
+        xl: '1280px', //Extra-large screens
       },
       animation: {
         'slide-in-right': 'slide-in-right 0.5s ease-out',

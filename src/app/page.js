@@ -12,7 +12,7 @@ const getData = async (prefix) => {
 const homepageImageData = await getData('background/');
 const featuredImageData = await getData('featured/');
 
-console.log(featuredImageData)
+console.log(featuredImageData);
 
 const Home = () => {
   return (
@@ -20,7 +20,7 @@ const Home = () => {
       <TopNav />
       <div className="relative h-3/5 pt-1 flex items-center justify-center">
         <HomepageCarousel homepageImageData={homepageImageData} />
-        <div className="absolute p-2 text-sm md:text-base md:p-6 rounded-sm text-center text-white bg-blackrgba">
+        <div className="absolute p-2 text-sm md:text-base md:p-6 rounded-sm text-center text-white bg-black_rgba">
           <h1 className="pb-1">Photography Blog</h1>
           <p className="pb-2.5">The world through my lens</p>
           <p>Junior developer & photographer</p>
