@@ -6,8 +6,9 @@ import hamburger from '../../../public/hamburger.png';
 import lens from '../../../public/lens.png';
 import githubIcon from '../../../public/github.png';
 import instagramIcon from '../../../public/instagram.png';
+import linkedinIcon from '../../../public/linkedin.png';
 import globals from 'src/data/globals.js';
-import Links from 'src/components/Links.js';
+import StyledLinks from 'src/components/coreUl/StyledLinks.js';
 
 const TopNav = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -19,50 +20,57 @@ const TopNav = () => {
   return (
     <>
       <div
-        className="z-20 flex justify-between items-center relative bg-lightBrown shadow-md py-6"
+        className="z-20 flex justify-between relative bg-lightBrown shadow-md py-6"
         onClick={handleToggle}
       >
         <div className="w-8 h-8 ml-6">
-          <Links
-            linkText={<Image src={lens} alt="lens logo" />}
+          <StyledLinks
+            linkText={<Image src={lens} alt={globals.appName} />}
             href="/"
             isInternal
           />
         </div>
 
-        <div className="w-6 h-6 mr-6 md:hidden cursor-pointer">
-          <Image src={hamburger} alt="mobile menu button" />
+        <div className="flex">
+          {/* Desktop Menu */}
+          <nav className="hidden md:block">
+            <ul className="flex justify-end">
+              <li className="pr-3">
+                <StyledLinks linkText="Home" href="/" isInternal />
+              </li>
+              <li className="pr-3">
+                <StyledLinks linkText="About" href="/about" isInternal />
+              </li>
+            </ul>
+          </nav>
+
+          {/* Icons */}
+          <div className="flex items-center">
+            <div className="w-7 h-7 pr-2">
+              <StyledLinks
+                linkText={<Image src={githubIcon} alt="" />}
+                href={globals.externalLinks.Github}
+              />
+            </div>
+            <div className="w-7 h-7 pr-2">
+              <StyledLinks
+                linkText={<Image src={linkedinIcon} alt="" />}
+                href={globals.externalLinks.Linkedin}
+              />
+            </div>
+            <div className="w-7 h-7 pr-2">
+              <StyledLinks
+                linkText={<Image src={instagramIcon} alt="" />}
+                href={globals.externalLinks.Instagram}
+              />
+            </div>
+          </div>
+
+          {/* Mobile Menu Button */}
+          <div className="w-6 h-6 mr-6 md:hidden cursor-pointer">
+            <Image src={hamburger} alt="" />
+          </div>
         </div>
-
-        {/* Desktop Menu */}
-        <nav className="hidden md:block pr-10">
-          <ul className="flex justify-end">
-            <li className="pr-3">
-              <Links linkText="Home" href="/" isInternal />
-            </li>
-            <li className="pr-3">
-              <Links linkText="About" href="/about" isInternal />
-            </li>
-
-            <div className=" w-7 h-7 pl-2">
-              <li>
-                <Links
-                  linkText={<Image src={githubIcon} alt="Github icon" />}
-                  href={globals().externalLinks.Github}
-                />
-              </li>
-            </div>
-
-            <div className="w-7 h-7 pl-2">
-              <li>
-                <Links
-                  linkText={<Image src={instagramIcon} alt="Instagram icon" />}
-                  href={globals().externalLinks.Instagram}
-                />
-              </li>
-            </div>
-          </ul>
-        </nav>
       </div>
 
       {/* Mobile Menu */}
@@ -73,10 +81,10 @@ const TopNav = () => {
       >
         <ul className={`text-left ${isOpen ? 'block' : 'hidden h-screen p-6'}`}>
           <li>
-            <Links linkText="Home" href="/" isInternal />
+            <StyledLinks linkText="Home" href="/" isInternal />
           </li>
           <li>
-            <Links linkText="About" href="/about" isInternal />
+            <StyledLinks linkText="About" href="/about" isInternal />
           </li>
         </ul>
       </nav>

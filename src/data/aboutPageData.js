@@ -1,4 +1,4 @@
-import Links from '@/components/Links';
+import StyledLinks from '@/components/coreUl/StyledLinks';
 import globals from './globals';
 
 const aboutPageData = () => {
@@ -18,9 +18,9 @@ const aboutPageData = () => {
       <p className="pb-4">
         Keen to learn more about my coding journey? Check out my{' '}
         <span className="font-bold">
-          <Links
+          <StyledLinks
             linkText="GitHub profile"
-            href={globals().externalLinks.Github}
+            href={globals.externalLinks.Github}
           />
         </span>{' '}
         for a closer look at my projects.
@@ -35,7 +35,7 @@ const aboutPageData = () => {
       <p>
         As I continue to code and capture moments, I invite you to stay{' '}
         <span className="font-bold">
-          <Links linkText="connected." href={globals().contacts.Main} />
+          <StyledLinks linkText="connected." href={globals.contacts.Main} />
         </span>
       </p>
     </>

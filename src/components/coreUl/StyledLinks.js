@@ -1,11 +1,11 @@
 import Link from 'next/link';
 
-const Links = ({ linkText, href, isInternal }) => {
+const StyledLinks = ({ linkText, href, isInternal }) => {
   return (
     <Link
       href={href}
       rel="noopener noreferrer"
-      {...(isInternal ? null : { target: '_blank' })}
+      target={`${isInternal ? '' : '_blank'}`}
       className="hover:underline"
     >
       {linkText}
@@ -13,4 +13,4 @@ const Links = ({ linkText, href, isInternal }) => {
   );
 };
 
-export default Links;
+export default StyledLinks;
