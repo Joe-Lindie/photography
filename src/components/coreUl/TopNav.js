@@ -31,7 +31,7 @@ const TopNav = () => {
           />
         </div>
 
-        <div className="flex">
+        <div className="flex items-center">
           {/* Desktop Menu */}
           <nav className="hidden md:block">
             <ul className="flex justify-end">
@@ -46,19 +46,19 @@ const TopNav = () => {
 
           {/* Icons */}
           <div className="flex items-center">
-            <div className="w-7 h-7 pr-2">
+            <div className="w-5 h-5 mr-2">
               <StyledLinks
                 linkText={<Image src={githubIcon} alt="" />}
                 href={globals.externalLinks.Github}
               />
             </div>
-            <div className="w-7 h-7 pr-2">
+            <div className="w-5 h-5 mr-2">
               <StyledLinks
                 linkText={<Image src={linkedinIcon} alt="" />}
                 href={globals.externalLinks.Linkedin}
               />
             </div>
-            <div className="w-7 h-7 pr-2">
+            <div className="w-5 h-5 mr-6">
               <StyledLinks
                 linkText={<Image src={instagramIcon} alt="" />}
                 href={globals.externalLinks.Instagram}
