@@ -4,11 +4,11 @@ import React, { useState } from 'react';
 import Image from 'next/image';
 import { featuredImageInformation } from '../data/imageData';
 
-const HomepageModal = ({ featuredImages }) => {
+const HomepageModal = ({ featuredImageData }) => {
   const [selectedImage, setSelectedImage] = useState(null);
   const [imageAlt, setImageAlt] = useState('');
 
-  const modifiedData = featuredImages.map((item) => ({
+  const modifiedData = featuredImageData.map((item) => ({
     url: item.url,
     alt: '',
     description: '',

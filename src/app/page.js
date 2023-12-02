@@ -1,21 +1,16 @@
 import TopNav from '@/components/coreUl/TopNav';
 import HomepageCarousel from '@/components/HomepageCarousel';
 import HomepageModal from '@/components/HomepageModal';
-import getObjects from '@/utils/homepageImagesS3';
-import getObjects2 from '@/utils/featuredImagesS3';
+import getObjects from '@/utils/s3';
 
-const getData = async () => {
-  const data = await getObjects();
+const getData = async (prefix) => {
+  const data = await getObjects(prefix);
   return data;
 };
 
-const getOtherData = async () => {
-  const data = await getObjects2();
-  return data;
-};
-
-const homepageImageData = await getData();
-const featuredImages = await getOtherData();
+// The string passed to getData() is the prefix needed for the s3 Bucket
+const homepageImageData = await getData('background-Images/');
+const featuredImageData = await getData('homepage/');
 
 const Home = () => {
   return (
@@ -31,7 +26,7 @@ const Home = () => {
       </div>
 
       <div className="pb-2.5">
-        <HomepageModal featuredImages={featuredImages} />
+        <HomepageModal featuredImageData={featuredImageData} />
       </div>
     </>
   );

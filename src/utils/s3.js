@@ -1,3 +1,5 @@
+// All images uploaded to the s3 GUI should have the file extension .jpg 
+
 import { S3Client, ListObjectsV2Command } from '@aws-sdk/client-s3';
 
 const s3 = new S3Client({
@@ -8,18 +10,21 @@ const s3 = new S3Client({
   },
 });
 
-const getObjects2 = async () => {
+const getObjects = async (prefix) => {
   const listObjectsParams = {
     Bucket: 'bindusphotographybucket',
-    Prefix: 'homepage/',
+    Prefix: prefix,
   };
 
   try {
     const data = await s3.send(new ListObjectsV2Command(listObjectsParams, {}));
 
-    const objectUrls = data.Contents.map((obj) => ({
-      url: `https://bindusphotographybucket.s3.amazonaws.com/${obj.Key}`,
-    }));
+    const objectUrls = data.Contents
+      // Filter out only objects with .jpg extension
+      .filter((obj) => obj.Key.endsWith('.jpg'))
+      .map((obj) => ({
+        url: `https://bindusphotographybucket.s3.amazonaws.com/${obj.Key}`,
+      }));
 
     return objectUrls;
   } catch (err) {
@@ -28,4 +33,4 @@ const getObjects2 = async () => {
   }
 };
 
-export default getObjects2;
+export default getObjects;
