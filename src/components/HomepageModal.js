@@ -41,6 +41,8 @@ const HomepageModal = ({ featuredImageData }) => {
               height={500}
               className="w-32 h-32 m-2 rounded-sm object-cover cursor-pointer"
               onClick={() => openImage(image.url, image.alt)}
+              placeholder="blur"
+              blurDataURL={image.url}
             ></Image>
           ))}
         </div>
