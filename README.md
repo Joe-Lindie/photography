@@ -26,3 +26,8 @@ Before you begin, make sure you have the following installed:
 1. Clone the project repository to your local machine using Git:
 2. cd into the project directory
 3. run "npm install" to install project dependencies
+4. create a .env.local file in the root 
+**.env.local**
+AWS_ACCESS_KEY_ID = AWS_ACCESS_KEY_ID
+SECRET_ACCESS_KEY = SECRET_ACCESS_KEY 
+AWS_REGION = AWS_REGION
