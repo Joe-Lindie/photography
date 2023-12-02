@@ -15,9 +15,9 @@ const HomepageCarousel = ({ homepageImageData }) => {
     description: '',
   }));
 
-  const updatedModifiedData = modifiedData.map((modifiedData, item) => {    
-      return {...modifiedData, ...homepageImageInformation[item]}
-  })
+  const updatedModifiedData = modifiedData.map((modifiedData, item) => {
+    return { ...modifiedData, ...homepageImageInformation[item] };
+  });
 
   const handleNext = () => {
     setCurrentIndex((currentIndex + 1) % updatedModifiedData.length);

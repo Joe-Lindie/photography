@@ -28,11 +28,11 @@ const imagesData = [
 const homepageImageInformation = [
   {
     alt: 'Jeju island, South Korea',
-    description: 'Korea'
+    description: 'Korea',
   },
   {
     alt: 'Little white house Scottish Highlands, Glencoe',
-    description: 'Scotland'
+    description: 'Scotland',
   },
 ];
 
