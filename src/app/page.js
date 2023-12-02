@@ -1,14 +1,21 @@
 import TopNav from '@/components/coreUl/TopNav';
 import HomepageCarousel from '@/components/HomepageCarousel';
 import HomepageModal from '@/components/HomepageModal';
-import getObjects from '@/utils/s3';
+import getObjects from '@/utils/homepageImagesS3';
+import getObjects2 from '@/utils/featuredImagesS3';
 
 const getData = async () => {
   const data = await getObjects();
   return data;
 };
 
+const getOtherData = async () => {
+  const data = await getObjects2();
+  return data;
+};
+
 const homepageImageData = await getData();
+const featuredImages = await getOtherData();
 
 const Home = () => {
   return (
@@ -24,7 +31,7 @@ const Home = () => {
       </div>
 
       <div className="pb-2.5">
-        <HomepageModal />
+        <HomepageModal featuredImages={featuredImages} />
       </div>
     </>
   );

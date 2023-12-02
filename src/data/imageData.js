@@ -1,27 +1,39 @@
-const imagesData = [
+const featuredImageInformation = [
   {
-    alt: 'Woljeong Bridge, Gyeongju, South Korea',
-    url: 'https://bindusphotographybucket.s3.eu-north-1.amazonaws.com/homepage/IMG_5037.jpg',
-  },
-  {
-    alt: 'Daegu, South Korea',
-    url: 'https://bindusphotographybucket.s3.eu-north-1.amazonaws.com/homepage/IMG_5427.jpg',
-  },
-  {
-    alt: 'Mt Fuji Japan',
-    url: 'https://bindusphotographybucket.s3.eu-north-1.amazonaws.com/homepage/IMG_5814.jpg',
+    alt: 'Bridge at night Seoul, South Korea',
+    description: 'South Korea',
   },
   {
     alt: 'Road lined with cherry blossom trees, South Korea',
-    url: 'https://bindusphotographybucket.s3.eu-north-1.amazonaws.com/homepage/IMG_2258.jpg',
+    description: 'Korea',
   },
   {
     alt: 'Pond in South Korea',
-    url: 'https://bindusphotographybucket.s3.eu-north-1.amazonaws.com/homepage/IMG_2510.jpg',
+    description: 'Korea',
   },
   {
-    alt: 'Isle of Skye ',
-    url: 'https://bindusphotographybucket.s3.eu-north-1.amazonaws.com/homepage/IMG_6961.jpg',
+    alt: 'Jeju island, South Korea',
+    description: 'Korea',
+  },
+  {
+    alt: 'Woljeong Bridge, Gyeongju, South Korea',
+    description: 'Korea',
+  },
+  {
+    alt: 'Daegu, South Korea',
+    description: 'Korea',
+  },
+  {
+    alt: 'Mt Fuji Japan',
+    description: 'Japan',
+  },
+  {
+    alt: 'Little white house Scottish Highlands, Glencoe',
+    description: 'Scotland',
+  },
+  {
+    alt: 'Isle of Skye',
+    description: 'Scotland',
   },
 ];
 
@@ -36,4 +48,4 @@ const homepageImageInformation = [
   },
 ];
 
-export { imagesData, homepageImageInformation };
+export { featuredImageInformation, homepageImageInformation };

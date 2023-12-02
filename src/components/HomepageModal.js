@@ -2,15 +2,25 @@
 
 import React, { useState } from 'react';
 import Image from 'next/image';
-import { imagesData } from '@/data/imageData';
+import { featuredImageInformation } from '../data/imageData';
 
-const HomepageModal = () => {
+const HomepageModal = ({ featuredImages }) => {
   const [selectedImage, setSelectedImage] = useState(null);
-  const [imageAltText, setImageAltText] = useState('');
+  const [imageAlt, setImageAlt] = useState('');
 
-  const openImage = (imageUrl, imageAltText) => {
+  const modifiedData = featuredImages.map((item) => ({
+    url: item.url,
+    alt: '',
+    description: '',
+  }));
+
+  const updatedModifiedData = modifiedData.map((modifiedData, item) => {
+    return { ...modifiedData, ...featuredImageInformation[item] };
+  });
+
+  const openImage = (imageUrl, imageAlt) => {
     setSelectedImage(imageUrl);
-    setImageAltText(imageAltText);
+    setImageAlt(imageAlt);
   };
 
   const closeImage = () => {
@@ -22,7 +32,7 @@ const HomepageModal = () => {
       <div className="flex flex-col items-center pt-14">
         <h2 className="pb-2 font-medium">Featured Images</h2>
         <div className="flex justify-center flex-wrap">
-          {imagesData.map((image) => (
+          {updatedModifiedData.map((image) => (
             <Image
               key={image.url}
               src={image.url}
@@ -46,7 +56,7 @@ const HomepageModal = () => {
           </p>
           <Image
             src={selectedImage}
-            alt={imageAltText}
+            alt={imageAlt}
             width={1000}
             height={1000}
             className="w-[45rem] h-[20rem] sm:h-[25rem] md:h-[28rem] object-cover"

@@ -4,7 +4,7 @@ const nextConfig = {
     remotePatterns: [
       {
         protocol: 'https',
-        hostname: 'bindusphotographybucket.s3.eu-north-1.amazonaws.com',
+        hostname: 'bindusphotographybucket.s3.amazonaws.com',
         pathname: '/homepage/**',
       },
       {
