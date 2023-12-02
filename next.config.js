@@ -5,12 +5,12 @@ const nextConfig = {
       {
         protocol: 'https',
         hostname: 'bindusphotographybucket.s3.amazonaws.com',
-        pathname: '/homepage/**',
+        pathname: '/featured/**',
       },
       {
         protocol: 'https',
         hostname: 'bindusphotographybucket.s3.amazonaws.com',
-        pathname: '/background-Images/**',
+        pathname: '/background/**',
       },
     ],
   },

@@ -9,8 +9,10 @@ const getData = async (prefix) => {
 };
 
 // The string passed to getData() is the prefix needed for the s3 Bucket
-const homepageImageData = await getData('background-Images/');
-const featuredImageData = await getData('homepage/');
+const homepageImageData = await getData('background/');
+const featuredImageData = await getData('featured/');
+
+console.log(featuredImageData)
 
 const Home = () => {
   return (

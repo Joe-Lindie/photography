@@ -1,9 +1,5 @@
 const featuredImageInformation = [
   {
-    alt: 'Bridge at night Seoul, South Korea',
-    description: 'South Korea',
-  },
-  {
     alt: 'Road lined with cherry blossom trees, South Korea',
     description: 'Korea',
   },
