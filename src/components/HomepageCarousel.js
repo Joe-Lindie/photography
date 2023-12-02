@@ -4,29 +4,34 @@ import React, { useState } from 'react';
 import Image from 'next/image';
 import rightChevron from '../../public/right-chevron.png';
 import leftChevron from '../../public/left-chevron.png';
+import { homepageImageInformation } from '../data/imageData';
 
-const HomepageCarousel = ({ imageData }) => {
+const HomepageCarousel = ({ homepageImageData }) => {
   const [currentIndex, setCurrentIndex] = useState(0);
 
-  const modifiedData = imageData.map((item) => ({
+  const modifiedData = homepageImageData.map((item) => ({
     url: item.url,
     alt: '',
     description: '',
   }));
 
+  const updatedModifiedData = modifiedData.map((modifiedData, item) => {    
+      return {...modifiedData, ...homepageImageInformation[item]}
+  })
+
   const handleNext = () => {
-    setCurrentIndex((currentIndex + 1) % modifiedData.length);
+    setCurrentIndex((currentIndex + 1) % updatedModifiedData.length);
   };
 
   const handlePrevious = () => {
     setCurrentIndex(
-      (currentIndex - 1 + modifiedData.length) % modifiedData.length,
+      (currentIndex - 1 + modifiedData.length) % updatedModifiedData.length,
     );
   };
 
   return (
     <>
-      {modifiedData.map((item, index) => (
+      {updatedModifiedData.map((item, index) => (
         <Image
           className={`w-full h-full object-cover object-center absolute ${
             index === currentIndex

@@ -25,16 +25,15 @@ const imagesData = [
   },
 ];
 
-const backgroundImages = [
-  {
-    alt: 'some text',
-  },
+const homepageImageInformation = [
   {
     alt: 'Jeju island, South Korea',
+    description: 'Korea'
   },
   {
     alt: 'Little white house Scottish Highlands, Glencoe',
+    description: 'Scotland'
   },
 ];
 
-export { imagesData, backgroundImages };
+export { imagesData, homepageImageInformation };
