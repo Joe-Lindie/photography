@@ -12,8 +12,6 @@ const getData = async (prefix) => {
 const homepageImageData = await getData('background/');
 const featuredImageData = await getData('featured/');
 
-console.log(featuredImageData);
-
 const Home = () => {
   return (
     <>
