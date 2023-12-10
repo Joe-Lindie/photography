@@ -36,6 +36,13 @@ const TopNav = () => {
                 <StyledLinks linkText="Home" href="/" isInternal />
               </li>
               <li className="pr-3">
+                <StyledLinks
+                  linkText="Collections"
+                  href="/collections"
+                  isInternal
+                />
+              </li>
+              <li className="pr-3">
                 <StyledLinks linkText="About" href="/about" isInternal />
               </li>
             </ul>
@@ -82,6 +89,13 @@ const TopNav = () => {
         <ul className={`text-left ${isOpen ? 'block' : 'hidden h-screen p-6'}`}>
           <li>
             <StyledLinks linkText="Home" href="/" isInternal />
+          </li>
+          <li className="pr-3">
+            <StyledLinks
+              linkText="Collections"
+              href="/collections"
+              isInternal
+            />
           </li>
           <li>
             <StyledLinks linkText="About" href="/about" isInternal />

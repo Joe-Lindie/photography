@@ -1,16 +1,11 @@
 import TopNav from '@/components/coreUl/TopNav';
 import HomepageCarousel from '@/components/HomepageCarousel';
 import HomepageModal from '@/components/HomepageModal';
-import getObjects from '@/utils/s3';
-
-const getData = async (prefix) => {
-  const data = await getObjects(prefix);
-  return data;
-};
+import getImageData from '@/utils/getImageData';
 
 // The string passed to getData() is the prefix needed for the s3 Bucket
-const homepageImageData = await getData('background/');
-const featuredImageData = await getData('featured/');
+const homepageImageData = await getImageData('background/');
+const featuredImageData = await getImageData('featured/');
 
 const Home = () => {
   return (
