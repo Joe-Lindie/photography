@@ -42,7 +42,7 @@ const HomepageCarousel = ({ homepageImageData }) => {
     <>
       {loading ? (
         <div className="flex items-center">
-          <div className="animate-spin h-5 w-5 border-t-2 border-black_rgba border-solid rounded-full"></div>
+          <div className="animate-spin h-5 w-5 border-t-2 border-black-rgba border-solid rounded-full"></div>
           <p className="ml-2">Loading</p>
         </div>
       ) : (
@@ -62,20 +62,20 @@ const HomepageCarousel = ({ homepageImageData }) => {
               priority={true}
             ></Image>
           ))}
-          <div className="absolute p-2 text-sm md:text-base md:p-6 rounded-sm text-center text-white bg-black_rgba">
+          <div className="absolute p-2 text-sm md:text-base md:p-6 rounded-sm text-center text-white bg-black-rgba">
             <h1 className="pb-1">Photography Blog</h1>
             <p className="pb-2.5">The world through my lens</p>
             <p>Software Developer & Photographer</p>
           </div>
           <div className="flex justify-between inset-x-0 absolute">
             <button
-              className="w-8 h-8 mt-2.5 ml-2.5 p-2 rounded-full bg-black_rgba"
+              className="w-8 h-8 mt-2.5 ml-2.5 p-2 rounded-full bg-black-rgba"
               onClick={handleNext}
             >
               <Image src={leftChevron} alt="left arrow" />
             </button>
             <button
-              className="w-8 h-8 mt-2.5 mr-2.5 p-2 rounded-full bg-black_rgba"
+              className="w-8 h-8 mt-2.5 mr-2.5 p-2 rounded-full bg-black-rgba"
               onClick={handlePrevious}
             >
               <Image src={rightChevron} alt="right arrow" />

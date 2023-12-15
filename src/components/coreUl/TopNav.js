@@ -19,7 +19,7 @@ const TopNav = () => {
 
   return (
     <>
-      <div className="z-20 flex justify-between relative bg-light_brown shadow-md py-6">
+      <div className="z-20 flex justify-between relative bg-light-brown shadow-md py-6">
         <div className="w-8 h-8 ml-6">
           <StyledLinks
             linkText={<Image src={lens} alt={globals.appName} />}
