@@ -1,16 +1,45 @@
+import getImagesData from '@/utils/getImageData';
+import Image from 'next/image';
+import Grid from '@/components/coreUl/Grid';
+import TopNav from '@/components/coreUl/TopNav';
 import StyledLinks from '@/components/coreUl/StyledLinks';
 
-const Korea = () => {
+const southKoreaImageData = await getImagesData('korea/');
+
+const SouthKorea = () => {
   return (
-    <div className="h-screen flex flex-col items-center justify-center">
-      <p>Korea Collection Coming Soon..</p>
-      <StyledLinks
-        isInternal
-        linkText="Click here to go back to Home"
-        href="/"
-      />
-    </div>
+    <>
+      <TopNav />
+      <Grid>
+        <div className="col-start-1 col-end-13">
+          <div className="flex justify-between items-center my-4">
+            <h1 className="text-lg sm:text-xl">South Korea</h1>
+            <span className="text-xs">
+              <StyledLinks
+                isInternal
+                linkText="Go Back ←"
+                href="/collections"
+              />
+            </span>
+          </div>
+        </div>
+      </Grid>
+
+      <Grid>
+        {southKoreaImageData.map((image) => (
+          <div className="col-span-6 md:col-span-4">
+            <Image
+              key={image.url}
+              src={image.url}
+              alt="South Korea"
+              width={500}
+              height={500}
+            ></Image>
+          </div>
+        ))}
+      </Grid>
+    </>
   );
 };
 
-export default Korea;
+export default SouthKorea;
