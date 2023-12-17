@@ -27,9 +27,8 @@ const SouthKorea = () => {
 
       <Grid>
         {southKoreaImageData.map((image) => (
-          <div className="col-span-6 md:col-span-4">
+          <div key={image.url} className="col-span-6 md:col-span-4">
             <Image
-              key={image.url}
               src={image.url}
               alt="South Korea"
               width={500}
