@@ -25,7 +25,7 @@ const Collections = () => {
       <div className="mt-4">
         <Grid>
           {cards.map((card, index) => (
-            <div key={index} className="col-span-6 h-60 relative ">
+            <div key={index} className="col-span-6 h-60 relative">
               <Link href={`/collections/${card.route}`}>
                 <Image
                   src={card.cover}
