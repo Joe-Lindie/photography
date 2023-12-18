@@ -8,7 +8,7 @@ const cards = [
     location: 'South Korea',
     route: 'south-korea',
     cover:
-      'https://bindusphotographybucket.s3.amazonaws.com/featured/IMG_5427.jpg',
+      'https://bindusphotographybucket.s3.amazonaws.com/korea/IMG_4997.jpg',
   },
   {
     location: 'Scotland',
@@ -20,7 +20,13 @@ const cards = [
     location: 'Japan',
     route: 'japan',
     cover:
-      'https://bindusphotographybucket.s3.amazonaws.com/japan/IMG_1283.jpg',
+      'https://bindusphotographybucket.s3.amazonaws.com/japan/IMG_5610.jpg',
+  },
+  {
+    location: 'Singapore',
+    route: 'singapore',
+    cover:
+      'https://bindusphotographybucket.s3.amazonaws.com/singapore/IMG_5251.jpg',
   },
 ];
 
