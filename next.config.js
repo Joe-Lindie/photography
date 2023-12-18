@@ -1,35 +1,39 @@
 /** @type {import('next').NextConfig} */
+
+const protocol = 'https';
+const hostname = 'bindusphotographybucket.s3.amazonaws.com';
+
 const nextConfig = {
   images: {
     remotePatterns: [
       {
-        protocol: 'https',
-        hostname: 'bindusphotographybucket.s3.amazonaws.com',
+        protocol: protocol,
+        hostname: hostname,
         pathname: '/featured/**',
       },
       {
-        protocol: 'https',
-        hostname: 'bindusphotographybucket.s3.amazonaws.com',
+        protocol: protocol,
+        hostname: hostname,
         pathname: '/background/**',
       },
       {
-        protocol: 'https',
-        hostname: 'bindusphotographybucket.s3.amazonaws.com',
+        protocol: protocol,
+        hostname: hostname,
         pathname: '/scotland/**',
       },
       {
-        protocol: 'https',
-        hostname: 'bindusphotographybucket.s3.amazonaws.com',
+        protocol: protocol,
+        hostname: hostname,
         pathname: '/korea/**',
       },
       {
-        protocol: 'https',
-        hostname: 'bindusphotographybucket.s3.amazonaws.com',
+        protocol: protocol,
+        hostname: hostname,
         pathname: '/japan/**',
       },
       {
-        protocol: 'https',
-        hostname: 'bindusphotographybucket.s3.amazonaws.com',
+        protocol: protocol,
+        hostname: hostname,
         pathname: '/singapore/**',
       },
     ],
