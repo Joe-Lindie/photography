@@ -22,6 +22,11 @@ const nextConfig = {
         hostname: 'bindusphotographybucket.s3.amazonaws.com',
         pathname: '/korea/**',
       },
+      {
+        protocol: 'https',
+        hostname: 'bindusphotographybucket.s3.amazonaws.com',
+        pathname: '/japan/**',
+      },
     ],
   },
   env: {

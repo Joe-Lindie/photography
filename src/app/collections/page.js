@@ -16,6 +16,12 @@ const cards = [
     cover:
       'https://bindusphotographybucket.s3.amazonaws.com/featured/IMG_6898.jpg',
   },
+  {
+    location: 'Japan',
+    route: 'japan',
+    cover:
+      'https://bindusphotographybucket.s3.amazonaws.com/japan/IMG_1283.jpg',
+  },
 ];
 
 const Collections = () => {
