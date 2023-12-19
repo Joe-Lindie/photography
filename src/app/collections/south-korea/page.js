@@ -1,6 +1,6 @@
 import getImagesData from '@/utils/getImageData';
 import TopNav from '@/components/coreUl/TopNav';
-import ImageGridLayout from '@/components/ImageGridLayout';
+import ImageGridLayout from '@/components/imageLayouts/ImageGridLayout';
 
 const southKoreaImageData = await getImagesData('korea/');
 

@@ -2,9 +2,9 @@
 
 import React, { useState, useEffect } from 'react';
 import Image from 'next/image';
-import rightChevron from '../../public/right-chevron.png';
-import leftChevron from '../../public/left-chevron.png';
-import { homepageImageInformation } from '../data/imageData';
+import rightChevron from '../../../public/right-chevron.png';
+import leftChevron from '../../../public/left-chevron.png';
+import { homepageImageInformation } from '../../data/imageData';
 import shuffle from '@/utils/shuffle';
 
 const HomepageCarousel = ({ homepageImageData }) => {

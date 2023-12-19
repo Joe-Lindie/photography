@@ -1,6 +1,6 @@
 import TopNav from '@/components/coreUl/TopNav';
-import HomepageCarousel from '@/components/HomepageCarousel';
-import HomepageModal from '@/components/HomepageModal';
+import HomepageCarousel from '@/components/imageLayouts/HomepageCarousel';
+import HomepageModal from '@/components/imageLayouts/HomepageModal';
 import getImageData from '@/utils/getImageData';
 
 // The string passed to getData() is the prefix needed for the s3 Bucket

@@ -1,6 +1,6 @@
 import Image from 'next/image';
-import Grid from './coreUl/Grid';
-import StyledLinks from './coreUl/StyledLinks';
+import Grid from '../coreUl/Grid';
+import StyledLinks from '../coreUl/StyledLinks';
 
 const ImageGridLayout = ({ imageData, title, alt }) => {
   return (
