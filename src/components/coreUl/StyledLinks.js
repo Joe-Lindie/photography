@@ -6,7 +6,7 @@ const StyledLinks = ({ linkText, href, isInternal }) => {
       href={href}
       rel="noopener noreferrer"
       target={`${isInternal ? '' : '_blank'}`}
-      className="hover:underline"
+      className="border-b-2 border-transparent hover:border-black transition duration-300 ease-in-out"
     >
       {linkText}
     </Link>

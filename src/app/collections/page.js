@@ -14,7 +14,7 @@ const cards = [
     location: 'Scotland',
     route: 'scotland',
     cover:
-      'https://bindusphotographybucket.s3.amazonaws.com/featured/IMG_6898.jpg',
+      'https://bindusphotographybucket.s3.amazonaws.com/scotland/IMG_6898.jpg',
   },
   {
     location: 'Japan',

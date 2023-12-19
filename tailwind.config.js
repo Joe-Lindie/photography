@@ -8,8 +8,8 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        brown: '#c8b3a2', //brown
-        'light-brown': '#ddd5d0', //light-brown
+        brown: '#ddd5d0', //brown
+        'light-brown': '#f5f2f1', //light-brown
         'dark-cream': '#dddad1', //dark-cream
         'black-rgba': 'rgba(0, 0, 0, 0.7)', //opaque-black
       },
