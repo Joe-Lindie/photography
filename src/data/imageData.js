@@ -1,35 +1,27 @@
 const featuredImageInformation = [
   {
     alt: 'Road lined with cherry blossom trees, South Korea',
-    description: 'Korea',
+    description: 'Daegu, South Korea',
   },
   {
     alt: 'Pond in South Korea',
-    description: 'Korea',
-  },
-  {
-    alt: 'Jeju island, South Korea',
-    description: 'Korea',
+    description: 'Gyeongsan, South Korea',
   },
   {
     alt: 'Woljeong Bridge, Gyeongju, South Korea',
-    description: 'Korea',
+    description: 'Gyeongju, South Korea',
   },
   {
     alt: 'Daegu, South Korea',
-    description: 'Korea',
+    description: 'Daegu, South Korea',
   },
   {
     alt: 'Mt Fuji Japan',
-    description: 'Japan',
-  },
-  {
-    alt: 'Little white house Scottish Highlands, Glencoe',
-    description: 'Scotland',
+    description: 'Tokyo, Japan',
   },
   {
     alt: 'Isle of Skye',
-    description: 'Scotland',
+    description: 'Isle of Skye, Scotland',
   },
 ];
 

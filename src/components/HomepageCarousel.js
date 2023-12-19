@@ -62,7 +62,7 @@ const HomepageCarousel = ({ homepageImageData }) => {
               priority={true}
             ></Image>
           ))}
-          <div className="absolute p-2 text-sm md:text-base md:p-6 rounded-sm text-center text-white bg-black-rgba">
+          <div className="absolute p-2 text-sm md:text-base md:p-6 rounded-sm text-center bg-white-rgba">
             <h1 className="text-lg sm:text-xl pb-1">Photography Blog</h1>
             <p className="text-lg sm:text-xl pb-2.5">
               The world through my lens

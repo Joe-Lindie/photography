@@ -49,7 +49,7 @@ const Collections = () => {
                   height={500}
                   className="object-cover w-full h-full blur-sm hover:blur-none"
                 ></Image>
-                <p className="pointer-events-none absolute top-1/2 left-1/2 transform translate-x-[-50%] translate-y-[-50%] text-white text-center bg-black-rgba p-2 rounded-sm">
+                <p className="pointer-events-none absolute top-1/2 left-1/2 transform translate-x-[-50%] translate-y-[-50%] text-center bg-white-rgba p-2 rounded-sm">
                   {card.location}
                 </p>
               </Link>

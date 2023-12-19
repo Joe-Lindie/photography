@@ -3,6 +3,7 @@
 import React, { useState } from 'react';
 import Image from 'next/image';
 import { featuredImageInformation } from '../data/imageData';
+import Grid from './coreUl/Grid';
 
 const HomepageModal = ({ featuredImageData }) => {
   const [selectedImage, setSelectedImage] = useState(null);
@@ -29,22 +30,30 @@ const HomepageModal = ({ featuredImageData }) => {
 
   return (
     <>
-      <div className="flex flex-col items-center pt-14">
-        <h2 className="pb-2 font-medium">Featured Images</h2>
-        <div className="flex justify-center flex-wrap">
-          {updatedModifiedData.map((image) => (
+      <Grid>
+        <div className="col-start-1 col-end-13 py-8">
+          <h2 className="text-lg sm:text-xl">Featured Images</h2>
+        </div>
+      </Grid>
+
+      <Grid>
+        {updatedModifiedData.map((image) => (
+          <div
+            key={image.url}
+            className="col-span-6 md:col-span-4 cursor-pointer"
+          >
             <Image
-              key={image.url}
               src={image.url}
               alt={image.alt}
               width={500}
               height={500}
-              className="w-32 h-32 m-2 rounded-sm object-cover cursor-pointer"
               onClick={() => openImage(image.url, image.alt)}
             ></Image>
-          ))}
-        </div>
-      </div>
+
+            <p className="py-2">{image.description}</p>
+          </div>
+        ))}
+      </Grid>
 
       {selectedImage && (
         <div className="z-30 w-full h-full flex items-center justify-center top-0 left-0 fixed bg-black bg-opacity-70 backdrop-blur-md">

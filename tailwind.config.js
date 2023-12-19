@@ -12,6 +12,7 @@ module.exports = {
         'light-brown': '#f5f2f1', //light-brown
         'dark-cream': '#dddad1', //dark-cream
         'black-rgba': 'rgba(0, 0, 0, 0.7)', //opaque-black
+        'white-rgba': 'rgba(255, 255, 255, 0.7)', //opaque-white,
       },
       screens: {
         xs: '360px', //Extra small screens
