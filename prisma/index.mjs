@@ -2,14 +2,17 @@ import { PrismaClient } from '@prisma/client';
 import getImageData from './getImageData.mjs';
 
 const prisma = new PrismaClient();
-const homepageImageData = await getImageData('background/');
 
+// The string passed to getImageData() is the prefix needed for the Amazon s3 Bucket
+const homepageImageData = await getImageData('background/');
 const UrlValuesArrayForDatabase = homepageImageData.map((image) => image.url);
 
+// This will create a new entry in the database
+// It will only create a new entry if the URL does not exist
 const main = async () => {
   for (const imageUrl of UrlValuesArrayForDatabase) {
     try {
-      const image = await prisma.homepageCarouselImages.createMany({
+      await prisma.homepageCarouselImages.createMany({
         data: {
           url: imageUrl,
           description: 'Edit value in GUI by running npx prisma studio',
