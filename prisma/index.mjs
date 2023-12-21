@@ -1,5 +1,5 @@
 import { PrismaClient } from '@prisma/client';
-import getImageData from './getImageData.mjs';
+import getImageData from './utils/getImageData.mjs';
 
 const prisma = new PrismaClient();
 
