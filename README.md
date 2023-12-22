@@ -1,6 +1,6 @@
 ## Photography Blog
 
-Welcome to my Photography Blog, a platform for sharing images.
+Welcome to my Photography Blog, a platform for sharing images
 
 ## Tech Stack
 
