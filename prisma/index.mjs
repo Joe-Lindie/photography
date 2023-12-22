@@ -6,7 +6,6 @@ const prisma = new PrismaClient();
 // The string passed to getImageData() is the prefix needed for the Amazon s3 Bucket
 const homepageImageData = await getImageData('background/');
 const UrlValuesArrayForDatabase = homepageImageData.map((image) => image.url);
-console.log('working?');
 
 // This will create a new entry in the database
 // It will only create a new entry if the URL does not exist
