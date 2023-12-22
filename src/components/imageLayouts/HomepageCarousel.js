@@ -2,9 +2,9 @@
 
 import React, { useState, useEffect } from 'react';
 import Image from 'next/image';
-import rightChevron from '../../public/right-chevron.png';
-import leftChevron from '../../public/left-chevron.png';
-import { homepageImageInformation } from '../data/imageData';
+import rightChevron from '../../../public/right-chevron.png';
+import leftChevron from '../../../public/left-chevron.png';
+// import { homepageImageInformation } from '../../data/imageData';
 import shuffle from '@/utils/shuffle';
 
 const HomepageCarousel = ({ homepageImageData }) => {
@@ -12,18 +12,8 @@ const HomepageCarousel = ({ homepageImageData }) => {
   const [shuffledData, setShuffledData] = useState([]);
   const [loading, setLoading] = useState(true);
 
-  const modifiedData = homepageImageData.map((item) => ({
-    url: item.url,
-    alt: '',
-    description: '',
-  }));
-
-  const updatedModifiedData = modifiedData.map((modifiedData, item) => {
-    return { ...modifiedData, ...homepageImageInformation[item] };
-  });
-
   useEffect(() => {
-    const shuffledArray = shuffle(updatedModifiedData);
+    const shuffledArray = shuffle(homepageImageData);
     setShuffledData(shuffledArray);
     setLoading(false);
   }, []);
@@ -34,7 +24,7 @@ const HomepageCarousel = ({ homepageImageData }) => {
 
   const handlePrevious = () => {
     setCurrentIndex(
-      (currentIndex - 1 + modifiedData.length) % shuffledData.length,
+      (currentIndex - 1 + homepageImageData.length) % shuffledData.length,
     );
   };
 
@@ -47,7 +37,7 @@ const HomepageCarousel = ({ homepageImageData }) => {
         </div>
       ) : (
         <>
-          {shuffledData.map((item, index) => (
+          {homepageImageData.map((item, index) => (
             <Image
               className={`w-full h-full object-cover object-center absolute ${
                 index === currentIndex

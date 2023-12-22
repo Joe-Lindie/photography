@@ -2,8 +2,8 @@
 
 import React, { useState } from 'react';
 import Image from 'next/image';
-import { featuredImageInformation } from '../data/imageData';
-import Grid from './coreUl/Grid';
+import { featuredImageInformation } from '../../data/imageData';
+import Grid from '../coreUl/Grid';
 
 const HomepageModal = ({ featuredImageData }) => {
   const [selectedImage, setSelectedImage] = useState(null);
