@@ -23,3 +23,11 @@ model FeaturedImages {
   description String
   alt         String
 }
+
+// This model created the migration for the South Korea album images
+model SouthKoreaImages {
+  id          Int    @id @default(autoincrement())
+  url         String @unique
+  description String
+  alt         String
+}
