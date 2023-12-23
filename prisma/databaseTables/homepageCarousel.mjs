@@ -39,11 +39,3 @@ homepageCarousel(homepageUrls)
     await prisma.$disconnect();
     process.exit(1);
   });
-
-// COMMANDS FOR PRISMA
-
-// if you add a new model to schema.prisma: npx prisma migrate dev
-// then apply migrations: npx prisma migrate deploy
-// whenever the data object changes: npx node index.mjs
-// To see a prisma visualization of tables run: npx prisma studio (http://localhost:5555/)
-// to format: npx prisma format
