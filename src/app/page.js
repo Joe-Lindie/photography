@@ -1,15 +1,12 @@
 import TopNav from '@/components/coreUl/TopNav';
 import HomepageCarousel from '@/components/imageLayouts/HomepageCarousel';
 import HomepageModal from '@/components/imageLayouts/HomepageModal';
-import getImageData from '@/utils/getImageData';
 import { PrismaClient } from '@prisma/client';
-
-// The string passed to getData() is the prefix needed for the s3 Bucket
-const featuredImageData = await getImageData('featured/');
 
 const prisma = new PrismaClient();
 // This will return all values from the homepageCarouselImages Table in the database
 const homepageImageData = await prisma.homepageCarouselImages.findMany();
+const featuredImageData = await prisma.featuredImages.findMany();
 
 const Home = () => {
   return (

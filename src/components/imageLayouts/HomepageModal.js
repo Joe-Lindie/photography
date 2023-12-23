@@ -2,22 +2,11 @@
 
 import React, { useState } from 'react';
 import Image from 'next/image';
-import { featuredImageInformation } from '../../data/imageData';
 import Grid from '../coreUl/Grid';
 
 const HomepageModal = ({ featuredImageData }) => {
   const [selectedImage, setSelectedImage] = useState(null);
   const [imageAlt, setImageAlt] = useState('');
-
-  const modifiedData = featuredImageData.map((item) => ({
-    url: item.url,
-    alt: '',
-    description: '',
-  }));
-
-  const updatedModifiedData = modifiedData.map((modifiedData, item) => {
-    return { ...modifiedData, ...featuredImageInformation[item] };
-  });
 
   const openImage = (imageUrl, imageAlt) => {
     setSelectedImage(imageUrl);
@@ -37,7 +26,7 @@ const HomepageModal = ({ featuredImageData }) => {
       </Grid>
 
       <Grid>
-        {updatedModifiedData.map((image) => (
+        {featuredImageData.map((image) => (
           <div
             key={image.url}
             className="col-span-6 md:col-span-4 cursor-pointer"
