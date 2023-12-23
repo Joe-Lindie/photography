@@ -36,6 +36,7 @@ const homepageCarousel = async (UrlValuesArrayForDatabase) => {
     }
   }
 };
+
 homepageCarousel(homepageUrls)
   .then(async () => {
     await prisma.$disconnect();

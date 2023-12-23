@@ -4,7 +4,8 @@ import HomepageModal from '@/components/imageLayouts/HomepageModal';
 import { PrismaClient } from '@prisma/client';
 
 const prisma = new PrismaClient();
-// This will return all values from the homepageCarouselImages Table in the database
+
+// These variables will return all values from the Tables in the database ↓↓
 const homepageImageData = await prisma.homepageCarouselImages.findMany();
 const featuredImageData = await prisma.featuredImages.findMany();
 
