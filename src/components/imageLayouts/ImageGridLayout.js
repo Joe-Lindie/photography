@@ -1,8 +1,17 @@
+'use client';
+import { useState, useEffect } from 'react';
 import Image from 'next/image';
 import Grid from '../coreUl/Grid';
 import StyledLinks from '../coreUl/StyledLinks';
+import LoadingSpinner from '../coreUl/LoadingSpinner';
 
 const ImageGridLayout = ({ imageData, title, alt }) => {
+  const [isLoading, setIsLoading] = useState(true);
+
+  useEffect(() => {
+    setIsLoading(false);
+  }, []);
+
   return (
     <>
       <Grid>
@@ -20,13 +29,17 @@ const ImageGridLayout = ({ imageData, title, alt }) => {
         </div>
       </Grid>
 
-      <Grid>
-        {imageData.map((image) => (
-          <div key={image.url} className="col-span-6 md:col-span-4">
-            <Image src={image.url} alt={alt} width={500} height={500}></Image>
-          </div>
-        ))}
-      </Grid>
+      {isLoading ? (
+        <LoadingSpinner />
+      ) : (
+        <Grid>
+          {imageData.map((image) => (
+            <div key={image.url} className="col-span-6 md:col-span-4">
+              <Image src={image.url} alt={alt} width={500} height={500}></Image>
+            </div>
+          ))}
+        </Grid>
+      )}
     </>
   );
 };

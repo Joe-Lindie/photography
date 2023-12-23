@@ -1,11 +1,10 @@
 'use client';
-
-import React, { useState, useEffect } from 'react';
+import { useState, useEffect } from 'react';
 import Image from 'next/image';
 import rightChevron from '../../../public/right-chevron.png';
 import leftChevron from '../../../public/left-chevron.png';
-// import { homepageImageInformation } from '../../data/imageData';
 import shuffle from '@/utils/shuffle';
+import LoadingSpinner from '../coreUl/LoadingSpinner';
 
 const HomepageCarousel = ({ homepageImageData }) => {
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -31,10 +30,7 @@ const HomepageCarousel = ({ homepageImageData }) => {
   return (
     <>
       {loading ? (
-        <div className="flex items-center">
-          <div className="animate-spin h-5 w-5 border-t-2 border-black-rgba border-solid rounded-full"></div>
-          <p className="ml-2">Loading</p>
-        </div>
+        <LoadingSpinner />
       ) : (
         <>
           {homepageImageData.map((item, index) => (
