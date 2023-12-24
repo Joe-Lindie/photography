@@ -4,7 +4,7 @@ import HomepageCarousel from '@/components/imageLayouts/HomepageCarousel';
 import HomepageModal from '@/components/imageLayouts/HomepageModal';
 
 // Limits exceeded for free Postgres tier, so code commented out
-// Calling images directly from S3 bucket
+// Making calls from Next app to Amazon S3 bucket directly.
 
 // import { PrismaClient } from '@prisma/client';
 // const prisma = new PrismaClient();

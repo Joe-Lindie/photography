@@ -38,8 +38,7 @@ const HomepageModal = ({ featuredImageData }) => {
               height={500}
               onClick={() => openImage(image.url, image.alt)}
             ></Image>
-
-            <p className="py-2 text-sm sm:text-base">{image.description}</p>
+            <p className="text-sm sm:text-base">{image.description}</p>
           </div>
         ))}
       </Grid>
