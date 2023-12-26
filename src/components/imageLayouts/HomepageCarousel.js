@@ -42,7 +42,7 @@ const HomepageCarousel = ({ homepageImageData }) => {
               }`}
               key={index}
               src={item.url}
-              alt={item.alt}
+              alt="temp alt text"
               width={1000}
               height={1000}
               priority={true}

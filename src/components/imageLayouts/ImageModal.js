@@ -27,10 +27,10 @@ const ImageModal = ({ imageData }) => {
           >
             <Image
               src={image.url}
-              alt={image.alt}
+              alt="temp alt text"
               width={500}
               height={500}
-              onClick={() => openImage(image.url, image.alt)}
+              onClick={() => openImage(image.url, 'temp alt text')}
             ></Image>
             <p className="text-sm sm:text-base">{image.description}</p>
           </div>
@@ -47,7 +47,7 @@ const ImageModal = ({ imageData }) => {
           </p>
           <Image
             src={selectedImage}
-            alt={imageAlt}
+            alt="temp alt text"
             width={1000}
             height={1000}
             className="w-[45rem] h-[20rem] sm:h-[25rem] md:h-[28rem] object-cover"
