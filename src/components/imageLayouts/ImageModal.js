@@ -5,7 +5,6 @@ import Image from 'next/image';
 import Grid from '../coreUl/Grid';
 
 const ImageModal = ({ imageData }) => {
-  console.log(imageData);
   const [selectedImage, setSelectedImage] = useState(null);
   const [imageAlt, setImageAlt] = useState('');
 
