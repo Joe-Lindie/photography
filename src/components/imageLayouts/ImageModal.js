@@ -4,7 +4,7 @@ import { useState } from 'react';
 import Image from 'next/image';
 import Grid from '../coreUl/Grid';
 
-const ImageModal = ({ imageData }) => {
+const ImageModal = ({ imageData, altText }) => {
   const [selectedImage, setSelectedImage] = useState(null);
   const [imageAlt, setImageAlt] = useState('');
 
@@ -27,7 +27,7 @@ const ImageModal = ({ imageData }) => {
           >
             <Image
               src={image.url}
-              alt="temp alt text"
+              alt={altText}
               width={500}
               height={500}
               onClick={() => openImage(image.url, 'temp alt text')}
@@ -47,7 +47,7 @@ const ImageModal = ({ imageData }) => {
           </p>
           <Image
             src={selectedImage}
-            alt="temp alt text"
+            alt={altText}
             width={1000}
             height={1000}
             className="w-[45rem] h-[20rem] sm:h-[25rem] md:h-[28rem] object-cover"

@@ -1,6 +1,6 @@
 import TopNav from '@/components/coreUl/TopNav';
 import getImageData from '@/utils/getImageData';
-import ImageGridLayout from '@/components/imageLayouts/ImageGridLayout';
+import AlbumBaseLayout from '@/components/imageLayouts/AlbumBaseLayout';
 
 // Limits exceeded for free Postgres tier, so code commented out
 // Calling images directly from S3 bucket
@@ -15,7 +15,7 @@ const SouthKorea = () => {
   return (
     <>
       <TopNav />
-      <ImageGridLayout
+      <AlbumBaseLayout
         imageData={southKoreaImageData}
         title="South Korea"
         alt="South Korean Collection"
