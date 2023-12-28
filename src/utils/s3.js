@@ -1,4 +1,4 @@
-// All images uploaded to the s3 GUI should have the file extension .jpg
+// All images uploaded to the s3 GUI should have the file extension .jpg test
 
 import { S3Client, ListObjectsV2Command } from '@aws-sdk/client-s3';
 
