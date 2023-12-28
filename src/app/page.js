@@ -27,7 +27,7 @@ const Home = () => {
       <div className="pb-2.5">
         <Grid>
           <div className="col-start-1 col-end-13 py-8">
-            <h2 className="text-lg sm:text-xl">Featured Images</h2>
+            <h2 className="text-lg sm:text-xl">Featured Imagess</h2>
           </div>
         </Grid>
         <ImageModal imageData={featuredImageData} />
