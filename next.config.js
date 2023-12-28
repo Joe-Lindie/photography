@@ -2,19 +2,20 @@
 
 const protocol = 'https';
 const hostname = 'bindusphotographybucket.s3.amazonaws.com';
+const hostname2 = 'storage.googleapis.com';
 
 const nextConfig = {
   images: {
     remotePatterns: [
       {
         protocol: protocol,
-        hostname: hostname,
-        pathname: '/featured/**',
+        hostname: hostname2,
+        pathname: '/bindus_photography/background/**',
       },
       {
         protocol: protocol,
         hostname: hostname,
-        pathname: '/background/**',
+        pathname: '/featured/**',
       },
       {
         protocol: protocol,

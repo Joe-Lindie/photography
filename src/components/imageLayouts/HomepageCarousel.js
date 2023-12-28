@@ -1,4 +1,5 @@
 'use client';
+
 import { useState, useEffect } from 'react';
 import Image from 'next/image';
 import rightChevron from '../../../public/right-chevron.png';
@@ -33,7 +34,7 @@ const HomepageCarousel = ({ homepageImageData }) => {
         <LoadingSpinner />
       ) : (
         <>
-          {homepageImageData.map((item, index) => (
+          {homepageImageData.map((imageUrl, index) => (
             <Image
               className={`w-full h-full object-cover object-center absolute ${
                 index === currentIndex
@@ -41,8 +42,8 @@ const HomepageCarousel = ({ homepageImageData }) => {
                   : 'opacity-0'
               }`}
               key={index}
-              src={item.url}
-              alt="temp alt text"
+              src={`https://storage.googleapis.com/bindus_photography/${imageUrl}`}
+              alt="Homepage Carousel images"
               width={1000}
               height={1000}
               priority={true}
