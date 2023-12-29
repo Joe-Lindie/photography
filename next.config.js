@@ -29,8 +29,8 @@ const nextConfig = {
       },
       {
         protocol: protocol,
-        hostname: hostname,
-        pathname: '/scotland/**',
+        hostname: hostname2,
+        pathname: '/bindus_photography/scotland/**',
       },
       {
         protocol: protocol,

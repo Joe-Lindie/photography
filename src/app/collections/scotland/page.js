@@ -1,15 +1,15 @@
-import getImagesData from '@/utils/getImageData';
 import TopNav from '@/components/coreUl/TopNav';
 import AlbumBaseLayout from '@/components/imageLayouts/AlbumBaseLayout';
+import listObjects from '@/utils/listObjects';
 
-const scotlandImageData = await getImagesData('scotland/');
+const scotlandImageDataArray = await listObjects('scotland');
 
 const Scotland = () => {
   return (
     <>
       <TopNav />
       <AlbumBaseLayout
-        imageData={scotlandImageData}
+        imageData={scotlandImageDataArray}
         title="Scottish Highlands"
         alt="Scotland Collection"
       />
