@@ -20,7 +20,7 @@ const cards = [
     location: 'Japan',
     route: 'japan',
     cover:
-      'https://bindusphotographybucket.s3.amazonaws.com/japan/IMG_5610.jpg',
+      'https://storage.googleapis.com/bindus_photography/japan/IMG_0855.jpg',
   },
   {
     location: 'Singapore',

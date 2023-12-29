@@ -19,6 +19,11 @@ const nextConfig = {
       },
       {
         protocol: protocol,
+        hostname: hostname2,
+        pathname: '/bindus_photography/japan/**',
+      },
+      {
+        protocol: protocol,
         hostname: hostname,
         pathname: '/scotland/**',
       },
@@ -26,11 +31,6 @@ const nextConfig = {
         protocol: protocol,
         hostname: hostname,
         pathname: '/korea/**',
-      },
-      {
-        protocol: protocol,
-        hostname: hostname,
-        pathname: '/japan/**',
       },
       {
         protocol: protocol,
