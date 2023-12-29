@@ -9,9 +9,9 @@ This is a Fullstack app built with:
 - Next.js (version 14)
 - Tailwind CSS
 - Prisma / Postgres
-- Amazon S3 bucket
+- Google Cloud Storage
 
-**Note:** I am using Vercel's free Postgres storage tier. I have exceeded the limits, so I am retrieving the image from Amazon's S3 bucket directly rather than the database.
+**Note:** I am using Vercel's free Postgres storage tier. I have exceeded the limits, so I am retrieving the image from Google Cloud's Storage bucket directly rather than the database.
 
 ## Deployed Environment
 
@@ -35,9 +35,6 @@ Before you begin, make sure you have the following installed:
 3. run `npm install` to install project dependencies
 4. create a `.env` file in the root and add:
 
-   - AWS_ACCESS_KEY_ID = AWS_ACCESS_KEY_ID
-   - SECRET_ACCESS_KEY = SECRET_ACCESS_KEY
-   - AWS_REGION = AWS_REGION
    - POSTGRES_URL="\*\*\*\*"
    - POSTGRES_PRISMA_URL="\*\*\*\*"
    - POSTGRES_URL_NON_POOLING="\*\*\*\*"
