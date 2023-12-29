@@ -6,11 +6,10 @@ import Grid from '../coreUl/Grid';
 
 const ImageModal = ({ imageData, altText }) => {
   const [selectedImage, setSelectedImage] = useState(null);
-  const [imageAlt, setImageAlt] = useState('');
+  const baseUrl = 'https://storage.googleapis.com/bindus_photography/';
 
-  const openImage = (imageUrl, imageAlt) => {
+  const openImage = (imageUrl) => {
     setSelectedImage(imageUrl);
-    setImageAlt(imageAlt);
   };
 
   const closeImage = () => {
@@ -21,16 +20,13 @@ const ImageModal = ({ imageData, altText }) => {
     <>
       <Grid>
         {imageData.map((image) => (
-          <div
-            key={image.url}
-            className="col-span-6 md:col-span-4 cursor-pointer"
-          >
+          <div key={image} className="col-span-6 md:col-span-4 cursor-pointer">
             <Image
-              src={image.url}
+              src={`${baseUrl}${image}`}
               alt={altText}
               width={500}
               height={500}
-              onClick={() => openImage(image.url, 'temp alt text')}
+              onClick={() => openImage(`${baseUrl}${image}`)}
             ></Image>
             <p className="text-sm sm:text-base">{image.description}</p>
           </div>

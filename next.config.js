@@ -14,8 +14,8 @@ const nextConfig = {
       },
       {
         protocol: protocol,
-        hostname: hostname,
-        pathname: '/featured/**',
+        hostname: hostname2,
+        pathname: '/bindus_photography/featured/**',
       },
       {
         protocol: protocol,

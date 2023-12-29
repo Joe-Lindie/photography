@@ -1,5 +1,4 @@
 import TopNav from '@/components/coreUl/TopNav';
-import getImageData from '@/utils/getImageData';
 import HomepageCarousel from '@/components/imageLayouts/HomepageCarousel';
 import ImageModal from '@/components/imageLayouts/ImageModal';
 import Grid from '@/components/coreUl/Grid';
@@ -14,8 +13,8 @@ import listObjects from '@/utils/listObjects';
 // const homepageImageData = await prisma.homepageCarouselImages.findMany();
 // const featuredImageData = await prisma.featuredImages.findMany();
 
-const featuredImageData = await getImageData('featured/');
-const homepageImageDataArray = await listObjects();
+const homepageImageDataArray = await listObjects('background');
+const featuredImageDataArray = await listObjects('featured');
 
 const Home = () => {
   return (
@@ -28,10 +27,13 @@ const Home = () => {
         <div className="pb-2.5">
           <Grid>
             <div className="col-start-1 col-end-13 py-8">
-              <h2 className="text-lg sm:text-xl">Featured Imagess</h2>
+              <h2 className="text-lg sm:text-xl">Featured Images</h2>
             </div>
           </Grid>
-          <ImageModal imageData={featuredImageData} />
+          <ImageModal
+            imageData={featuredImageDataArray}
+            altText="Featured Images"
+          />
         </div>
       }
     </>
