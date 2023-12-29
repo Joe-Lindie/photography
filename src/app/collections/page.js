@@ -8,7 +8,7 @@ const cards = [
     location: 'South Korea',
     route: 'south-korea',
     cover:
-      'https://bindusphotographybucket.s3.amazonaws.com/korea/IMG_4997.jpg',
+      'https://storage.googleapis.com/bindus_photography/korea/IMG_1784-1.jpg',
   },
   {
     location: 'Scotland',

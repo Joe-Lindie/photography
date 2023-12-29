@@ -1,6 +1,6 @@
 import TopNav from '@/components/coreUl/TopNav';
-import getImageData from '@/utils/getImageData';
 import AlbumBaseLayout from '@/components/imageLayouts/AlbumBaseLayout';
+import listObjects from '@/utils/listObjects';
 
 // Limits exceeded for free Postgres tier, so code commented out
 // Calling images directly from S3 bucket
@@ -9,14 +9,14 @@ import AlbumBaseLayout from '@/components/imageLayouts/AlbumBaseLayout';
 // const prisma = new PrismaClient();
 // const southKoreaImageData = await prisma.southKoreaImages.findMany();
 
-const southKoreaImageData = await getImageData('korea/');
+const koreaImageDataArray = await listObjects('korea');
 
 const SouthKorea = () => {
   return (
     <>
       <TopNav />
       <AlbumBaseLayout
-        imageData={southKoreaImageData}
+        imageData={koreaImageDataArray}
         title="South Korea"
         alt="South Korean Collection"
       />

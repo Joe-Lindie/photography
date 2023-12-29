@@ -24,13 +24,13 @@ const nextConfig = {
       },
       {
         protocol: protocol,
-        hostname: hostname,
-        pathname: '/scotland/**',
+        hostname: hostname2,
+        pathname: '/bindus_photography/korea/**',
       },
       {
         protocol: protocol,
         hostname: hostname,
-        pathname: '/korea/**',
+        pathname: '/scotland/**',
       },
       {
         protocol: protocol,
