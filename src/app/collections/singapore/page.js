@@ -1,15 +1,16 @@
-import getImageData from '@/utils/getImageData';
 import TopNav from '@/components/coreUl/TopNav';
 import AlbumBaseLayout from '@/components/imageLayouts/AlbumBaseLayout';
 
-const singaporeImageData = await getImageData('singapore/');
+import listObjects from '@/utils/listObjects';
+
+const singaporeImageDataArray = await listObjects('singapore');
 
 const Singapore = () => {
   return (
     <>
       <TopNav />
       <AlbumBaseLayout
-        imageData={singaporeImageData}
+        imageData={singaporeImageDataArray}
         title="Singapore"
         alt="Singapore Collection"
       />

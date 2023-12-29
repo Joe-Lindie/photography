@@ -26,7 +26,7 @@ const cards = [
     location: 'Singapore',
     route: 'singapore',
     cover:
-      'https://bindusphotographybucket.s3.amazonaws.com/singapore/IMG_5251.jpg',
+      'https://storage.googleapis.com/bindus_photography/singapore/IMG_5251.jpg',
   },
 ];
 
