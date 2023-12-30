@@ -22,20 +22,24 @@ const Home = () => {
       <TopNav />
       <div className="relative h-3/5 pt-1 flex items-center justify-center">
         <HomepageCarousel homepageImageData={homepageImageDataArray} />
-      </div>
-      {
-        <div className="pb-2.5">
-          <Grid>
-            <div className="col-start-1 col-end-13 py-8">
-              <h2 className="text-lg sm:text-xl">Featured Images</h2>
-            </div>
-          </Grid>
-          <ImageModal
-            imageData={featuredImageDataArray}
-            altText="Featured Images"
-          />
+        <div className="absolute p-2 text-sm md:text-base md:p-6 rounded-sm text-center bg-white-rgba">
+          <h1 className="text-lg sm:text-xl pb-1">Photography Blog</h1>
+          <p className="text-lg sm:text-xl pb-2.5">The world through my lens</p>
+          <p className="sm:text-lg">Software Developer & Photographer</p>
         </div>
-      }
+      </div>
+
+      <div className="pb-2.5">
+        <Grid>
+          <div className="col-start-1 col-end-13 py-8">
+            <h2 className="text-lg sm:text-xl">Featured Images</h2>
+          </div>
+        </Grid>
+        <ImageModal
+          imageData={featuredImageDataArray}
+          altText="Featured Images"
+        />
+      </div>
     </>
   );
 };
