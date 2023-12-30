@@ -34,7 +34,7 @@ const HomepageCarousel = ({ homepageImageData }) => {
         <LoadingSpinner />
       ) : (
         <>
-          {homepageImageData.map((imageUrl, index) => (
+          {shuffledData.map((imageUrl, index) => (
             <Image
               className={`w-full h-full object-cover object-center absolute ${
                 index === currentIndex
@@ -49,6 +49,7 @@ const HomepageCarousel = ({ homepageImageData }) => {
               priority={true}
             ></Image>
           ))}
+
           <div className="flex justify-between inset-x-0 absolute">
             <button
               className="w-8 h-8 mt-2.5 ml-2.5 p-2 rounded-full bg-black-rgba"
