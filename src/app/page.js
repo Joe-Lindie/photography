@@ -7,15 +7,6 @@ import ImageModal from '@/components/imageLayouts/ImageModal';
 import Grid from '@/components/coreUl/Grid';
 import LoadingSpinner from '@/components/coreUl/LoadingSpinner';
 
-// Limits exceeded for free Postgres tier, so code commented out
-// Making calls from Next app to Google Cloud directly.
-
-// import { PrismaClient } from '@prisma/client';
-// const prisma = new PrismaClient();
-// // These variables will return all values from the Tables in the database ↓↓
-// const homepageImageData = await prisma.homepageCarouselImages.findMany();
-// const featuredImageData = await prisma.featuredImages.findMany();
-
 const Home = () => {
   const [homepageImageDataArray, setHomepageImageDataArray] = useState([]);
   const [featuredImageDataArray, setFeaturedImageDataArray] = useState([]);
